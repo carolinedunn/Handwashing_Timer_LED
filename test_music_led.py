@@ -12,7 +12,7 @@ GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output pin and se
 
 
 x = random.randint(1,10)
-song = '/home/pi/Handwashing_Timer_Music/music/' + str(x) + '.mp3'
+song = '/home/pi/Handwashing_Timer_LED/music/' + str(x) + '.mp3'
 media = vlc.MediaPlayer(song)
 #media = vlc.MediaPlayer("/home/pi/Pimoroni/speakerphat/test/test.mp3")
 media.play()
