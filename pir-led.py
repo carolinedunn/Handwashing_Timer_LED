@@ -51,7 +51,7 @@ try:
 			print("Motion detected!")
 		#Generate a Random Integer
 			x = random.randint(1,10)
-			song = '/home/pi/Handwashing_Timer_Music/music/'+ str(x) +'.mp3'
+			song = '/home/pi/Handwashing_Timer_LED/music/'+ str(x) +'.mp3'
 		# VLC player on motion
 
 			media = vlc.MediaPlayer(song)
