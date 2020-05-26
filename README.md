@@ -1,7 +1,7 @@
 # Handwashing_Timer_LED
 Create a 20-second hand washing timer with an LED, random 20-music clip, activated with a motion sensor.
 
-![ProjectGIF](https://github.com/carolinedunn/Handwashing_Timer_Music/blob/master/photos/handwashingtimer.gif)
+![ProjectGIF](https://github.com/carolinedunn/Handwashing_Timer_LED/blob/master/photos/demo.gif)
 
 # Materials
 Materials:
@@ -10,53 +10,34 @@ Materials:
 - MicroSD card - https://amzn.to/2Nq5AN9
 - Motion Sensor - https://amzn.to/32OPMaA
 - Keyboard/Mouse/Monitor
-- Pimoroni Speaker PHAT
-
-![SpeakerPHATnotsoldered](https://github.com/carolinedunn/Handwashing_Timer_Music/blob/master/photos/speaker-phat-unsoldered.jpg)
-
-# Tools
-Solder Iron
-
-Solder
-
-Solder Holder
+- 3.5mm male-to-male audio cable - https://amzn.to/2LXhxrb
+- Portable speaker with 3.5mm Aux Audio Jack - https://amzn.to/2ZDnyBb
+- Small Breadboard - https://amzn.to/3d8jPiU
+- LED & 330 ohm resistor - https://amzn.to/3c8Jhnc
+- 5 Female to male jumper wires - https://amzn.to/2TIyXMj
 
 # Prerequisites
-1. Soldering Skills
-
-2. Raspbian OS Setup on a microSD card - https://youtu.be/2Jfv9NO6J2Q
+1. Raspbian OS Setup on a microSD card - https://youtu.be/2Jfv9NO6J2Q
 
 # Step 1 - Hardware Assembly
-1. Assemble Pimoroni Speaker pHat and solder - https://learn.pimoroni.com/tutorial/sandyj/assembling-speaker-phat
+1. If you are using a Raspberry Pi Zero W, solder all GPIO header pins.
 
-2. If you are using a Raspberry Pi Zero W, solder all GPIO header pins.
-
-3. Solder wires to pins 2, 4, and 11 of the Speaker Phat.
-
-4. Solder or attach as shown in the diagram the PIR motion sensor.
+2. Solder or attach as shown in the diagram the PIR motion sensor.
 
 ![WiringDiagram](https://github.com/carolinedunn/SmartHome_MotionSensor_RPi/blob/master/Wiring%20Diagram-MotionSensor%20to%20RPi.jpg)
 
+3. Solder or attach LED and resistor to the breadboard. Attach positive (longer pin) of the LED to the resistor, then use the jumper wire to connect to GPIO pin 14 / Physical pin number 8. Attach Gnd to Gnd on GPIO. I am using physical pin number 14.
+
 # Step 2 - Install Software
-1. Install Pimoroni SPEAKER PHAT software ```curl -sS https://get.pimoroni.com/speakerphat | bash```
+1. Install VLC for Python ```sudo pip install python-vlc```
 
-2. Hit 'y' twice and reboot when prompted. (Yes, you want the full install.)
+5. Git Clone this repository - ```git clone https://github.com/carolinedunn/Handwashing_Timer_LED```
 
-[More info about Pimoroni SpeakerpHat here - https://github.com/pimoroni/speaker-phat ]
-
-3. Test your install by playing a test file ```vlc /home/pi/Pimoroni/speakerphat/test/test.mp3```
-
-If sound plays, you can move onto the next step. If not, ```sudo apt-get install vlc```
-
-4. Install VLC for Python ```sudo pip install python-vlc```
-
-5. Git Clone this repository - ```git clone https://github.com/carolinedunn/Handwashing_Timer_Music```
-
-6. Go into the directory you just created ```cd Handwashing_Timer_Music```
+6. Go into the directory you just created ```cd Handwashing_Timer_LED```
 
 7. Test your setup by playing some music ```python test_music.py``` - If Music plays, then go to the next step, if not then go back and troubleshoot.
 
-8. Run the script! ```python pir.py```
+8. Run the script! ```python pir-led.py```
 9. Wave your hand over the motion sensor. If music plays, move to the next step, otherwise, go back and trouble shoot.
 
 
@@ -71,7 +52,7 @@ This step is optional if you'd like for this python script to run at boot.
 - Arrow down to the bottom of the file.
 - Enter the following at the bottom of the .bashrc
 
-```sudo python /home/pi/Handwashing_Timer_Music/pir.py```
+```sudo python /home/pi/Handwashing_Timer_LED/pir-led.py```
 
 - Ctrl-X to exit
 - 'y' to Save
