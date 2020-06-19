@@ -22,11 +22,11 @@ Materials:
 # Step 1 - Hardware Assembly
 1. If you are using a Raspberry Pi Zero W, solder all GPIO header pins.
 
-2. Solder or attach as shown in the diagram the PIR motion sensor.
+2. Attach PIR Motion sensor to the Raspberry Pi GPIO pins as shown in the diagram the PIR motion sensor. VCC to GPIO pin 2. GND to GPIO pin 6, and OUT to GPIO pin 11.
 
 ![WiringDiagram](https://github.com/carolinedunn/Handwashing_Timer_LED/blob/master/photos/Handwashing-Motion-LED-RPi-Wiring.jpg)
 
-3. Solder or attach LED and resistor to the breadboard. Attach positive (longer pin) of the LED to the resistor, then use the jumper wire to connect to GPIO pin 14 / Physical pin number 8. Attach Gnd to Gnd on GPIO. I am using physical pin number 14.
+3. Attach LED and resistor to the breadboard. Attach positive (longer pin) of the LED to the resistor, then use the jumper wire to connect to GPIO pin 14 / Physical pin number 8. Attach Gnd to Gnd on GPIO. I am using physical pin number 14.
 
 # Step 2 - Install Software
 1. Install VLC for Python ```sudo pip install python-vlc```
