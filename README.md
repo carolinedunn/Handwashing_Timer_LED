@@ -24,7 +24,7 @@ Materials:
 
 2. Solder or attach as shown in the diagram the PIR motion sensor.
 
-![WiringDiagram](https://github.com/carolinedunn/SmartHome_MotionSensor_RPi/blob/master/Wiring%20Diagram-MotionSensor%20to%20RPi.jpg)
+![WiringDiagram](https://github.com/carolinedunn/Handwashing_Timer_LED/blob/master/photos/Handwashing-Motion-LED-RPi-Wiring.jpg)
 
 3. Solder or attach LED and resistor to the breadboard. Attach positive (longer pin) of the LED to the resistor, then use the jumper wire to connect to GPIO pin 14 / Physical pin number 8. Attach Gnd to Gnd on GPIO. I am using physical pin number 14.
 
