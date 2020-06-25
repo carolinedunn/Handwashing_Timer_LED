@@ -14,7 +14,8 @@ Materials:
 - Portable speaker with 3.5mm Aux Audio Jack - https://amzn.to/2ZDnyBb
 - Small Breadboard - https://amzn.to/3d8jPiU
 - LED & 330 ohm resistor - https://amzn.to/3c8Jhnc
-- 5 Female to male jumper wires - https://amzn.to/2TIyXMj
+- 2 Female to male jumper wires - https://amzn.to/2TIyXMj
+- 3 Female to female jumper wires - 
 
 # Prerequisites
 1. Raspbian OS Setup on a microSD card - https://youtu.be/2Jfv9NO6J2Q
@@ -29,16 +30,18 @@ Materials:
 3. Attach LED and resistor to the breadboard. Attach positive (longer pin) of the LED to the resistor, then use the jumper wire to connect to GPIO pin 14 / Physical pin number 8. Attach Gnd to Gnd on GPIO. I am using physical pin number 14.
 
 # Step 2 - Install Software
-1. Install VLC for Python ```sudo pip install python-vlc```
+1. Install VLC for Python ```sudo apt-get install vlc```
 
-5. Git Clone this repository - ```git clone https://github.com/carolinedunn/Handwashing_Timer_LED```
+2. Install VLC for Python ```sudo pip install python-vlc```
 
-6. Go into the directory you just created ```cd Handwashing_Timer_LED```
+3. Git Clone this repository - ```git clone https://github.com/carolinedunn/Handwashing_Timer_LED```
 
-7. Test your setup by playing some music ```python test_music.py``` - If Music plays, then go to the next step, if not then go back and troubleshoot.
+4. Go into the directory you just created ```cd Handwashing_Timer_LED```
 
-8. Run the script! ```python pir-led.py```
-9. Wave your hand over the motion sensor. If music plays, move to the next step, otherwise, go back and trouble shoot.
+5. Test your setup by playing some music ```python test_music_led.py``` - If Music plays, then go to the next step, if not then go back and troubleshoot.
+
+6. Run the script! ```python pir-led.py```
+7. Wave your hand over the motion sensor. If music plays, move to the next step, otherwise, go back and trouble shoot.
 
 
 # Step 3: Run on Boot
