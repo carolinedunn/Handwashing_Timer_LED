@@ -54,7 +54,7 @@ This step is optional if you'd like for this python script to run at boot.
 - Arrow down to the bottom of the file.
 - Enter the following at the bottom of the .bashrc
 
-```sudo python /home/pi/Handwashing_Timer_LED/pir-led.py```
+```python /home/pi/Handwashing_Timer_LED/pir-led.py```
 
 - Ctrl-X to exit
 - 'y' to Save
