@@ -1,5 +1,5 @@
 # Handwashing_Timer_LED
-Create a 20-second hand washing timer with an LED, random 20-music clip, activated with a motion sensor.
+Make a 20-second hand washing timer with an LED, random 20-music clip, activated with a motion sensor.
 
 ![ProjectGIF](https://github.com/carolinedunn/Handwashing_Timer_LED/blob/master/photos/demo.gif)
 
@@ -15,7 +15,7 @@ Materials:
 - Small Breadboard - https://amzn.to/3d8jPiU
 - LED & 330 ohm resistor - https://amzn.to/3c8Jhnc
 - 2 Female to male jumper wires - https://amzn.to/2TIyXMj
-- 3 Female to female jumper wires - 
+- 3 Female to female jumper wires - https://amzn.to/2TIyXMj
 
 # Prerequisites
 1. Raspbian OS Setup on a microSD card - https://youtu.be/2Jfv9NO6J2Q
