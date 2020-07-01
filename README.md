@@ -32,6 +32,9 @@ Materials:
 # Step 2 - Install Software
 1. Install VLC for Python ```sudo pip install python-vlc```
 
+1a. Switch your audio output from HDMI to Analog
+![Analog](https://github.com/carolinedunn/Handwashing_Timer_LED/blob/master/photos/Screen%20Shot%202020-06-25%20at%204.31.17%20PM.png)
+
 2. Git Clone this repository - ```git clone https://github.com/carolinedunn/Handwashing_Timer_LED```
 
 3. Go into the directory you just created ```cd Handwashing_Timer_LED```
